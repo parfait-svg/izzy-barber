@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="" alt="">
+        <nav>
+           <h1 class="logo"><a href="index.html">IZ<span class="lg">ZY</span> BARBER SHOP</a></h1>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us<i class="fas fa-phone"></i></a>
+            <a href="index.html#about">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="myservices">Contact Us</h2>
+        <form onsubmit="sendMessageToWhatsApp(event)">
+            <label for="">Name: <input type="text" name="name" id="name" placeholder="Your Name" required> </label>
+            <label for="">Email: <input type="email" name="email" id="email" placeholder="Your Email" required></label>
+            <label for="">Message: <textarea name="Message" id="message" placeholder="Your Message" rows="4" required></textarea></label>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <section class="open-hours">
+        <h2> <i class="fas fa-clock"></i> Opening hours</h2>
+        <p><i class="fas fa-calendar-day"></i> Monday - Sunday</p>
+        <p><i class="fas fa-clock"></i> 7:30 AM - 8:00PM</p>
+        <p> Yaounde VI, Cameroon</p>
+        <p>Whatsapp <a href="https://wa.me/237693197400">Chat Now</a></p>
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.616012345678!2d11.486044!3d3.840921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108cbc1a2c3a7c41%3A0x123456789abcdef!2sMarch%C3%A9%20Acacias%2C%20Yaound%C3%A9!5e0!3m2!1sfr!2scm!4v1700000000000" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" frameborder="0"></iframe>
+
+
+   <footer>
+        <p>&copy; 2025 IZZY-BARBER Shop</p>
+        <p>Developed by <strong>Brice parfait</strong></p>
+        <a href="https://www.linkedin.com/in/brice-parfait-902817354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin"></i>Linkedin</a> |
+        <a href="mailto:parfaitbrisco@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+    </footer>
+
+    <script>
+        function sendMessageToWhatsApp (event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            const fullMessage = 'Contact Message from Website;\n\n Name: ${name}\n Email: ${email}\n Message: ${message}';
+            const whatsappURL = 'https://wa.me/237693197400?text=${encodeURIComponent(fulMessage)}';
+
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+</html>

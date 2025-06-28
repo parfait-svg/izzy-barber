@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f8f8f8;
+    color: #333;
+    padding: 20px;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #800080;
+    padding: 10px 20px;
+    border-radius: 1px;
+}
+
+header .logo {
+    font-size: 24px;
+    color: #111;
+}
+
+.lg {
+    color: orange;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav h1 a {
+    text-decoration: none;
+} 
+
+nav h1 a:hover {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    filter: brightness(20%);
+    
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    margin-top: -80px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.hero-text p {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.btn {
+    background: #800080;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.all-services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    text-decoration: none;
+    color: #800080;
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform .2s;
+}
+
+.service-item:hover {
+    transform: scale(1.03);
+}
+
+.service-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.about {
+    display: flex;
+    padding: 40px;
+    background: white;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    flex: 1;
+    padding: 20pxpx;
+}
+
+.about-image img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.service-list {
+    list-style: none;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #111;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #333;
+}
+
+.open-hours {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.open-hours h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.open-hours p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #444;
+}
+
+.open-hours i {
+    margin-right: 8px;
+    color: #800080;
+}
+
+.service-detail {
+    padding: 30px 15px;
+    text-align: center;
+    background-color: grey;
+}
+
+.service-detail img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service-details {
+    padding: 30px 15px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.service-details img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service-detailss {
+    padding: 30px 15px;
+    text-align: center;
+    background-color: grey;
+}
+
+.service-detailss img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service-detailsss {
+    padding: 30px 15px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.service-detailsss img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service-detailssss {
+    padding: 30px 15px;
+    text-align: center;
+    background-color: grey;
+}
+
+.service-detailssss img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.myservices {
+    text-align: center;
+    margin: 30px;
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #111;
+    border-radius: 5px;
+}
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-text, .about-image {
+        padding:10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service-item img {
+        margin: 0 0 10px 0;
+    }
+}
